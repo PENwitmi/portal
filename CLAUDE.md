@@ -45,10 +45,15 @@
 ```
 pharm_portal/
 ├── index.html          # メインポータルページ
-├── css/
-│   └── style.css      # 全スタイル（ビルドプロセスなし）
-├── js/
-│   └── updates.js     # お知らせ管理
+├── assets/
+│   ├── css/
+│   │   ├── style.css      # メインスタイル（サイト固有）
+│   │   └── components.css # 再利用可能なUIコンポーネント
+│   ├── js/
+│   │   └── main.js        # お知らせ管理、インタラクション
+│   └── img/
+│       ├── services/      # サービスアイコン
+│       └── common/        # 共通画像
 ├── data/
 │   └── updates.json   # 手動更新エントリー
 └── vercel.json        # リライト設定

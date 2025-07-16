@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -47,6 +48,27 @@
 ```
 
 ### 1.2 CSS基盤設定
+
+#### components.css（先に読み込み）
+```css
+/* 汎用コンポーネント・レイアウト */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
+/* ボタン、カード等のコンポーネント定義 */
+.button { /* ... */ }
+.service-card { /* ... */ }
+```
+
+#### style.css（後に読み込み）
 ```css
 /* リセットCSS */
 *, *::before, *::after {
@@ -71,9 +93,7 @@ body {
     background-color: var(--bg-white);
 }
 
-/* ユーティリティクラス */
-.container { /* 定義済み */ }
-.grid { /* 定義済み */ }
+/* サイト固有のセクションスタイル */
 ```
 
 ## Phase 2: セクション実装（60分）

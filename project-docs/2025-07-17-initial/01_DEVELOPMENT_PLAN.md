@@ -33,7 +33,8 @@ pharm_portal/
 ├── index.html              # メインページ（唯一のHTMLファイル）
 ├── assets/
 │   ├── css/
-│   │   └── style.css      # 統合スタイルシート（約500行想定）
+│   │   ├── style.css      # メインスタイル（約250-300行）
+│   │   └── components.css # UIコンポーネント（約200-250行）
 │   ├── js/
 │   │   └── main.js        # メインスクリプト（約100行想定）
 │   └── img/
@@ -44,6 +45,10 @@ pharm_portal/
 ├── vercel.json           # Vercelデプロイ設定
 └── project-docs/         # プロジェクトドキュメント
 ```
+
+### CSS分割設計
+- **components.css**: 再利用可能なUI要素（ボタン、カード、グリッド、コンテナ等）
+- **style.css**: サイト固有のスタイル（セクション、CSS変数、ベース設定）
 
 ## 5. 実装優先順位
 
@@ -109,3 +114,8 @@ pharm_portal/
 1. デザイン詳細仕様の確認（02_DESIGN_SPECIFICATIONS.md）
 2. 実装ガイドの確認（03_IMPLEMENTATION_GUIDE.md）
 3. Phase 1の開始（HTML基本構造の作成）
+
+---
+
+### 更新履歴
+- 2025-07-17 05:06: CSS分割設計を追加（style.css + components.css）
