@@ -13,8 +13,8 @@
 - ポータル（本サイト）: `pharm.nishimoto-learning.jp/`
 - 既存LPサイト: `pharm.nishimoto-learning.jp/lp/`（rewriteで対応）
 - OkusuriNote: `pharm.nishimoto-learning.jp/okusuri_note/`（rewriteで対応）
-- PharmTimer: `pharm.nishimoto-learning.jp/timer/`（rewriteで対応）
-- 誰でも薬理マスター: `pharm.nishimoto-learning.jp/game/`（rewriteで対応）
+- PharmTimer: `pharm.nishimoto-learning.jp/timer_app/`（rewriteで対応）
+- 誰でも薬理マスター: `pharm.nishimoto-learning.jp/pharmaco/`（rewriteで対応）
 
 **現在の状況と移行計画**：
 - 現在：LPサイトがルートディレクトリ（/）で稼働中
@@ -129,29 +129,47 @@
 - **Vercel**にデプロイ
 - vercel.jsonでrewrite設定
 
-### rewrite設定例
+### rewrite設定
 ```json
 {
   "rewrites": [
     {
-      "source": "/lp/:path*",
-      "destination": "https://pharm-tutor-lp.vercel.app/:path*"
+      "source": "/lp",
+      "destination": "https://pharm-tutor-lp.vercel.app/"
     },
     {
-      "source": "/okusuri_note/:path*",
-      "destination": "https://penwitmi.github.io/okusuri_note/:path*"
+      "source": "/lp/(.*)",
+      "destination": "https://pharm-tutor-lp.vercel.app/$1"
     },
     {
-      "source": "/timer/:path*",
-      "destination": "https://pharm-timer.vercel.app/:path*"
+      "source": "/timer_app",
+      "destination": "https://pharm-study-watch-app.vercel.app/"
     },
     {
-      "source": "/game/:path*",
-      "destination": "https://pharm-game.vercel.app/:path*"
+      "source": "/timer_app/(.*)",
+      "destination": "https://pharm-study-watch-app.vercel.app/$1"
+    },
+    {
+      "source": "/okusuri_note",
+      "destination": "https://penwitmi.github.io/okusuri_note/"
+    },
+    {
+      "source": "/okusuri_note/(.*)",
+      "destination": "https://penwitmi.github.io/okusuri_note/$1"
+    },
+    {
+      "source": "/pharmaco",
+      "destination": "https://pharmaco-game.vercel.app/pharmaco"
+    },
+    {
+      "source": "/pharmaco/(.*)",
+      "destination": "https://pharmaco-game.vercel.app/pharmaco/$1"
     }
   ]
 }
 ```
+
+**注意**: pharmacoはビルドディレクトリの都合上、destinationパスにも`/pharmaco`が含まれています。
 
 ## 運用要件
 
@@ -192,5 +210,11 @@
 ---
 
 作成日: 2025-07-17 00:19
-更新日: 2025-07-17 00:19
+更新日: 2025-07-17 05:17
 作成者: Claude (要件定義セッション)
+
+### 更新履歴
+- 2025-07-17 05:17: 実際のrewrite設定に基づいてURL構成を修正
+  - /timer/ → /timer_app/
+  - /game/ → /pharmaco/
+  - 正確なVercel URLを反映

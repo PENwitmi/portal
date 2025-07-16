@@ -185,7 +185,7 @@ body {
                 </a>
             </article>
             
-            <!-- 同様にPharmTimer、薬理マスターも実装 -->
+            <!-- 同様にPharmTimer（/timer_app/）、薬理マスター（/pharmaco/）も実装 -->
         </div>
     </div>
 </section>
@@ -336,24 +336,42 @@ body {
 {
     "rewrites": [
         {
-            "source": "/lp/:path*",
-            "destination": "https://pharm-tutor-lp.vercel.app/:path*"
+            "source": "/lp",
+            "destination": "https://pharm-tutor-lp.vercel.app/"
         },
         {
-            "source": "/okusuri_note/:path*",
-            "destination": "https://penwitmi.github.io/okusuri_note/:path*"
+            "source": "/lp/(.*)",
+            "destination": "https://pharm-tutor-lp.vercel.app/$1"
         },
         {
-            "source": "/timer/:path*",
-            "destination": "https://pharm-timer.vercel.app/:path*"
+            "source": "/timer_app",
+            "destination": "https://pharm-study-watch-app.vercel.app/"
         },
         {
-            "source": "/game/:path*",
-            "destination": "https://pharm-game.vercel.app/:path*"
+            "source": "/timer_app/(.*)",
+            "destination": "https://pharm-study-watch-app.vercel.app/$1"
+        },
+        {
+            "source": "/okusuri_note",
+            "destination": "https://penwitmi.github.io/okusuri_note/"
+        },
+        {
+            "source": "/okusuri_note/(.*)",
+            "destination": "https://penwitmi.github.io/okusuri_note/$1"
+        },
+        {
+            "source": "/pharmaco",
+            "destination": "https://pharmaco-game.vercel.app/pharmaco"
+        },
+        {
+            "source": "/pharmaco/(.*)",
+            "destination": "https://pharmaco-game.vercel.app/pharmaco/$1"
         }
     ]
 }
 ```
+
+**注意**: pharmacoはビルド構造の都合上、destination側にも`/pharmaco`パスが必要です。
 
 ### 6.2 デプロイチェックリスト
 

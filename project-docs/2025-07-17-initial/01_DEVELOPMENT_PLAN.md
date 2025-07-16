@@ -119,3 +119,4 @@ pharm_portal/
 
 ### 更新履歴
 - 2025-07-17 05:06: CSS分割設計を追加（style.css + components.css）
+- 2025-07-17 05:17: 実際のrewrite設定に基づいてURLパスを修正

@@ -30,9 +30,11 @@
 / → ポータル（本プロジェクト）
 /lp/* → pharm-tutor-lp.vercel.app
 /okusuri_note/* → penwitmi.github.io/okusuri_note
-/timer/* → pharm-timer.vercel.app
-/game/* → pharm-game.vercel.app
+/timer_app/* → pharm-study-watch-app.vercel.app
+/pharmaco/* → pharmaco-game.vercel.app/pharmaco
 ```
+
+**注意**: pharmacoはビルド構造の都合上、destination側にも/pharmacoパスが必要
 
 ### デザイン原則
 - **モバイルファーストレスポンシブ** (320px-1920px)
