@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/lp",
-      "destination": "https://pharm-tutor-lp.vercel.app/"
+      "destination": "https://pharmtutor.vercel.app/"
     },
     {
       "source": "/lp/(.*)",
-      "destination": "https://pharm-tutor-lp.vercel.app/$1"
+      "destination": "https://pharmtutor.vercel.app/$1"
     },
     {
       "source": "/timer_app",
