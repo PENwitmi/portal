@@ -1,0 +1,74 @@
+{
+  "updates": [
+    {
+      "id": "update-001",
+      "date": "2025.07.17",
+      "service": "portal",
+      "tag": "ポータル",
+      "content": "薬学生のためのサイトがオープンしました。3つの学習ツールで効率的な学習をサポートします。"
+    },
+    {
+      "id": "update-002",
+      "date": "2025.07.16",
+      "service": "okusuri",
+      "tag": "OkusuriNote",
+      "content": "新薬剤ページを5件追加しました。抗がん剤と免疫抑制剤の詳細解説を充実させました。"
+    },
+    {
+      "id": "update-003",
+      "date": "2025.07.15",
+      "service": "timer",
+      "tag": "PharmTimer",
+      "content": "学習統計機能をアップデート。週間・月間の学習時間グラフ表示が可能になりました。"
+    },
+    {
+      "id": "update-004",
+      "date": "2025.07.14",
+      "service": "game",
+      "tag": "誰でも薬理マスター",
+      "content": "新しいゲームモード「薬物相互作用チャレンジ」を追加。実践的な知識が身につきます。"
+    },
+    {
+      "id": "update-005",
+      "date": "2025.07.13",
+      "service": "okusuri",
+      "tag": "OkusuriNote",
+      "content": "循環器薬オーケストラ理論のインタラクティブ図解を実装。視覚的に理解が深まります。"
+    },
+    {
+      "id": "update-006",
+      "date": "2025.07.12",
+      "service": "timer",
+      "tag": "PharmTimer",
+      "content": "モバイル版のUI改善。スマートフォンでの操作性が向上しました。"
+    },
+    {
+      "id": "update-007",
+      "date": "2025.07.10",
+      "service": "game",
+      "tag": "誰でも薬理マスター",
+      "content": "レベル20以上の上級者向けコンテンツを追加。より深い薬理知識に挑戦できます。"
+    },
+    {
+      "id": "update-008",
+      "date": "2025.07.08",
+      "service": "okusuri",
+      "tag": "OkusuriNote",
+      "content": "服薬指導のポイントを各薬剤ページに追加。実務実習にも役立つ内容です。"
+    },
+    {
+      "id": "update-009",
+      "date": "2025.07.05",
+      "service": "portal",
+      "tag": "ポータル",
+      "content": "全サービスでダークモード対応を開始。目に優しい学習環境を提供します。"
+    },
+    {
+      "id": "update-010",
+      "date": "2025.07.01",
+      "service": "timer",
+      "tag": "PharmTimer",
+      "content": "学習目標設定機能を追加。国試までの学習計画を立てやすくなりました。"
+    }
+  ]
+}

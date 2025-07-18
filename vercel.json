@@ -1,0 +1,36 @@
+{
+  "rewrites": [
+    {
+      "source": "/lp",
+      "destination": "https://pharm-tutor-lp.vercel.app/"
+    },
+    {
+      "source": "/lp/(.*)",
+      "destination": "https://pharm-tutor-lp.vercel.app/$1"
+    },
+    {
+      "source": "/timer_app",
+      "destination": "https://pharm-study-watch-app.vercel.app/"
+    },
+    {
+      "source": "/timer_app/(.*)",
+      "destination": "https://pharm-study-watch-app.vercel.app/$1"
+    },
+    {
+      "source": "/okusuri_note",
+      "destination": "https://penwitmi.github.io/okusuri_note/"
+    },
+    {
+      "source": "/okusuri_note/(.*)",
+      "destination": "https://penwitmi.github.io/okusuri_note/$1"
+    },
+    {
+      "source": "/pharmaco",
+      "destination": "https://pharmaco-game.vercel.app/pharmaco"
+    },
+    {
+      "source": "/pharmaco/(.*)",
+      "destination": "https://pharmaco-game.vercel.app/pharmaco/$1"
+    }
+  ]
+}
