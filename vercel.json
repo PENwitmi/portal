@@ -26,11 +26,11 @@
     },
     {
       "source": "/pharmaco",
-      "destination": "https://pharmaco-game.vercel.app/"
+      "destination": "https://pharmaco-game.vercel.app/pharmaco"
     },
     {
       "source": "/pharmaco/(.*)",
-      "destination": "https://pharmaco-game.vercel.app/$1"
+      "destination": "https://pharmaco-game.vercel.app/pharmaco/$1"
     }
   ]
 }
